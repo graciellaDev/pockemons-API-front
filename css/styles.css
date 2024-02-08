@@ -1,0 +1,114 @@
+body {
+    background-color: #404040;
+}
+
+.unvisible {
+    display: none!important;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pockemon {
+    display: flex;
+}
+
+.pockemon__left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 40px 15px;
+    background-color: #333;
+}
+
+.pockemon__img {
+    width: auto;
+    height: 100px;
+}
+
+.pockemon__right {
+    width: 300px;
+    padding: 15px 10px;
+    background-color: #fff;
+}
+
+.pockemon__name {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+.pockemon__props {
+    padding: 5px 5px 15px 15px;
+    list-style-type: none;
+    box-shadow: -2px 1px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.pockemon__light {
+    text-transform: capitalize;
+    color: #afafaf;
+}
+
+.pockemon__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.pockemon__title-gen {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.pockemon__name-gen {
+    padding: 5px;
+    box-shadow: -2px 1px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: backgrpund-color .5s linear,
+                box-shadow .5s linear,
+                outline .5s linear
+                color .5s linear;
+}
+
+.pockemon__name-gen.active,
+.pockemon__name-gen.active:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.pockemon__name-gen:hover {
+    color: #000;
+    outline: 1px solid #333;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.pockemon__color-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.pockemon__color-name {
+    flex-basis: 100%;
+}
+
+.pockemon__color-img {
+    width: 50px;
+}
